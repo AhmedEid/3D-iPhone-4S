@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E53C17415C08AB800356F60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E53C17315C08AB800356F60 /* UIKit.framework */; };
+		9E53C17615C08AB800356F60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E53C17515C08AB800356F60 /* Foundation.framework */; };
+		9E53C17815C08AB800356F60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E53C17715C08AB800356F60 /* CoreGraphics.framework */; };
+		9E53C17E15C08AB800356F60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E53C17C15C08AB800356F60 /* InfoPlist.strings */; };
+		9E53C18015C08AB800356F60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E53C17F15C08AB800356F60 /* main.m */; };
+		9E53C19215C08AD200356F60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E53C18C15C08AD200356F60 /* AppDelegate.m */; };
+		9E53C19315C08AD200356F60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E53C18E15C08AD200356F60 /* ViewController.m */; };
+		9E53C19415C08AD200356F60 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E53C18F15C08AD200356F60 /* ViewController.xib */; };
+		9E53C19515C08AD200356F60 /* iPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E53C19115C08AD200356F60 /* iPhoneView.m */; };
+		9E53C19915C08ADE00356F60 /* iPhone4SFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E53C19615C08ADE00356F60 /* iPhone4SFront.png */; };
+		9E53C19A15C08ADE00356F60 /* iPhone4SRear.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E53C19715C08ADE00356F60 /* iPhone4SRear.png */; };
+		9E53C19B15C08ADE00356F60 /* iPhone4SBattery.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E53C19815C08ADE00356F60 /* iPhone4SBattery.png */; };
+		9E53C19D15C08AEC00356F60 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E53C19C15C08AEC00356F60 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9E53C16F15C08AB800356F60 /* iPhone 4S-3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPhone 4S-3D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E53C17315C08AB800356F60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9E53C17515C08AB800356F60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9E53C17715C08AB800356F60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9E53C17B15C08AB800356F60 /* iPhone 4S-3D-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPhone 4S-3D-Info.plist"; sourceTree = "<group>"; };
+		9E53C17D15C08AB800356F60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E53C17F15C08AB800356F60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E53C18115C08AB800356F60 /* iPhone 4S-3D-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPhone 4S-3D-Prefix.pch"; sourceTree = "<group>"; };
+		9E53C18B15C08AD200356F60 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9E53C18C15C08AD200356F60 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9E53C18D15C08AD200356F60 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9E53C18E15C08AD200356F60 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9E53C18F15C08AD200356F60 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		9E53C19015C08AD200356F60 /* iPhoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneView.h; sourceTree = "<group>"; };
+		9E53C19115C08AD200356F60 /* iPhoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneView.m; sourceTree = "<group>"; };
+		9E53C19615C08ADE00356F60 /* iPhone4SFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone4SFront.png; sourceTree = "<group>"; };
+		9E53C19715C08ADE00356F60 /* iPhone4SRear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone4SRear.png; sourceTree = "<group>"; };
+		9E53C19815C08ADE00356F60 /* iPhone4SBattery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone4SBattery.png; sourceTree = "<group>"; };
+		9E53C19C15C08AEC00356F60 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E53C16C15C08AB800356F60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E53C19D15C08AEC00356F60 /* QuartzCore.framework in Frameworks */,
+				9E53C17415C08AB800356F60 /* UIKit.framework in Frameworks */,
+				9E53C17615C08AB800356F60 /* Foundation.framework in Frameworks */,
+				9E53C17815C08AB800356F60 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E53C16415C08AB800356F60 = {
+			isa = PBXGroup;
+			children = (
+				9E53C17915C08AB800356F60 /* iPhone 4S-3D */,
+				9E53C17215C08AB800356F60 /* Frameworks */,
+				9E53C17015C08AB800356F60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E53C17015C08AB800356F60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E53C16F15C08AB800356F60 /* iPhone 4S-3D.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E53C17215C08AB800356F60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E53C19C15C08AEC00356F60 /* QuartzCore.framework */,
+				9E53C17315C08AB800356F60 /* UIKit.framework */,
+				9E53C17515C08AB800356F60 /* Foundation.framework */,
+				9E53C17715C08AB800356F60 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E53C17915C08AB800356F60 /* iPhone 4S-3D */ = {
+			isa = PBXGroup;
+			children = (
+				9E53C18B15C08AD200356F60 /* AppDelegate.h */,
+				9E53C18C15C08AD200356F60 /* AppDelegate.m */,
+				9E53C18D15C08AD200356F60 /* ViewController.h */,
+				9E53C18E15C08AD200356F60 /* ViewController.m */,
+				9E53C18F15C08AD200356F60 /* ViewController.xib */,
+				9E53C19015C08AD200356F60 /* iPhoneView.h */,
+				9E53C19115C08AD200356F60 /* iPhoneView.m */,
+				9E53C19615C08ADE00356F60 /* iPhone4SFront.png */,
+				9E53C19715C08ADE00356F60 /* iPhone4SRear.png */,
+				9E53C19815C08ADE00356F60 /* iPhone4SBattery.png */,
+				9E53C17A15C08AB800356F60 /* Supporting Files */,
+			);
+			path = "iPhone 4S-3D";
+			sourceTree = "<group>";
+		};
+		9E53C17A15C08AB800356F60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E53C17B15C08AB800356F60 /* iPhone 4S-3D-Info.plist */,
+				9E53C17C15C08AB800356F60 /* InfoPlist.strings */,
+				9E53C17F15C08AB800356F60 /* main.m */,
+				9E53C18115C08AB800356F60 /* iPhone 4S-3D-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E53C16E15C08AB800356F60 /* iPhone 4S-3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E53C18715C08AB800356F60 /* Build configuration list for PBXNativeTarget "iPhone 4S-3D" */;
+			buildPhases = (
+				9E53C16B15C08AB800356F60 /* Sources */,
+				9E53C16C15C08AB800356F60 /* Frameworks */,
+				9E53C16D15C08AB800356F60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iPhone 4S-3D";
+			productName = "iPhone 4S-3D";
+			productReference = 9E53C16F15C08AB800356F60 /* iPhone 4S-3D.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E53C16615C08AB800356F60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 9E53C16915C08AB800356F60 /* Build configuration list for PBXProject "iPhone 4S-3D" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9E53C16415C08AB800356F60;
+			productRefGroup = 9E53C17015C08AB800356F60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E53C16E15C08AB800356F60 /* iPhone 4S-3D */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E53C16D15C08AB800356F60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E53C17E15C08AB800356F60 /* InfoPlist.strings in Resources */,
+				9E53C19415C08AD200356F60 /* ViewController.xib in Resources */,
+				9E53C19915C08ADE00356F60 /* iPhone4SFront.png in Resources */,
+				9E53C19A15C08ADE00356F60 /* iPhone4SRear.png in Resources */,
+				9E53C19B15C08ADE00356F60 /* iPhone4SBattery.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E53C16B15C08AB800356F60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E53C18015C08AB800356F60 /* main.m in Sources */,
+				9E53C19215C08AD200356F60 /* AppDelegate.m in Sources */,
+				9E53C19315C08AD200356F60 /* ViewController.m in Sources */,
+				9E53C19515C08AD200356F60 /* iPhoneView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9E53C17C15C08AB800356F60 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E53C17D15C08AB800356F60 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E53C18515C08AB800356F60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9E53C18615C08AB800356F60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E53C18815C08AB800356F60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPhone 4S-3D/iPhone 4S-3D-Prefix.pch";
+				INFOPLIST_FILE = "iPhone 4S-3D/iPhone 4S-3D-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9E53C18915C08AB800356F60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPhone 4S-3D/iPhone 4S-3D-Prefix.pch";
+				INFOPLIST_FILE = "iPhone 4S-3D/iPhone 4S-3D-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E53C16915C08AB800356F60 /* Build configuration list for PBXProject "iPhone 4S-3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E53C18515C08AB800356F60 /* Debug */,
+				9E53C18615C08AB800356F60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E53C18715C08AB800356F60 /* Build configuration list for PBXNativeTarget "iPhone 4S-3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E53C18815C08AB800356F60 /* Debug */,
+				9E53C18915C08AB800356F60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E53C16615C08AB800356F60 /* Project object */;
+}
