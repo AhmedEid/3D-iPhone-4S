@@ -17,32 +17,22 @@
 @synthesize iPhoneView = _iPhoneView;
 @synthesize explodeButton = _explodeButton;
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];  
-    self.iPhoneView = [[IphoneView alloc] initWithFrame:CGRectMake(0, 0, 320, 416)];
+    self.iPhoneView = [[IphoneView alloc] initWithFrame:self.view.bounds];
     self.iPhoneView.delegate = self;
     [self.view addSubview:self.iPhoneView];
 }
 
-- (void)viewDidUnload
-{
-    [self setExplodeButton:nil];
-    [super viewDidUnload];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return NO;
 }
 
 - (IBAction)fade:(id)sender {
-    if (self.iPhoneView.layer.opacity ==1)
-    {
-        [self fadeView:self.iPhoneView fromOpacity:1 toOpacity:0 withDuration:3];
-    } else
-    {
-        [self fadeView:self.iPhoneView fromOpacity:0 toOpacity:1 withDuration:3];
+    if (self.iPhoneView.layer.opacity ==1) {
+        [self fadeView:self.iPhoneView fromOpacity:1 toOpacity:0 withDuration:1.5];
+    } else {
+        [self fadeView:self.iPhoneView fromOpacity:0 toOpacity:1 withDuration:1.5];
     }
 }
 
@@ -78,27 +68,9 @@
     }
 }
 
-/*
-- (IBAction)scale:(id)sender {
-    
-    CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform"];
-    
-    CATransform3D currentTransform = self.logoView.layer.sublayerTransform;
-    CATransform3D scaleTransform = CATransform3DScale(currentTransform, 0.5, 0.5, 0.5);
-    self.logoView.layer.sublayerTransform = scaleTransform;    
-
-    scaleAnimation.fromValue = [NSValue valueWithCATransform3D:currentTransform];
-    scaleAnimation.toValue = [NSValue valueWithCATransform3D:scaleTransform];
-    scaleAnimation.duration = 3;
-    
-    [self.logoView.layer addAnimation:scaleAnimation forKey:@"ScaleAnimation"];
-}
-*/
-
 #pragma mark - CoreAnimationHelperMethods 
 
--(void)fadeView:(UIView *)view fromOpacity:(int)fromOpacity toOpacity:(int)toOpacity withDuration:(int)duration
-{
+-(void)fadeView:(UIView *)view fromOpacity:(int)fromOpacity toOpacity:(int)toOpacity withDuration:(int)duration {
     //Setup an explicit animation
     CABasicAnimation *fade = [CABasicAnimation animationWithKeyPath:@"opacity"];
     fade.fromValue = [NSNumber numberWithInt:fromOpacity];
@@ -117,29 +89,24 @@
 
 #pragma mark - iPhoneTapsDelegateMethods 
 
--(void)iPhoneFrontTapped
-{
+-(void)iPhoneFrontTapped {
     NSLog(@"Front of iPhone was tapped");
     [self showAlertViewWithTitle:@"Front of iPhone was tapped" andMessage:nil];
 }
 
--(void)iPhoneRearTapped
-{
+-(void)iPhoneRearTapped {
     NSLog(@"Rear of iPhone was tapped");
     [self showAlertViewWithTitle:@"Rear of iPhone was tapped" andMessage:nil];
-
 }
 
--(void)iPhoneBatteryTapped
-{
+-(void)iPhoneBatteryTapped {
     NSLog(@"Battery of iPhone was tapped");
     [self showAlertViewWithTitle:@"Battery of iPhone was tapped" andMessage:nil];
 }
 
 #pragma mark - Helper Methods 
 
--(void)showAlertViewWithTitle:(NSString *)title andMessage:(NSString *)message
-{
+-(void)showAlertViewWithTitle:(NSString *)title andMessage:(NSString *)message {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"Alright" otherButtonTitles:nil, nil];
     [alert show];
 }
